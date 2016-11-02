@@ -1,5 +1,7 @@
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 /**
@@ -7,11 +9,16 @@ import javax.swing.JFrame;
  */
 
 /**
- * @author US
+ * @author Dat Van
  *
  */
 public class gitdemo extends JFrame {
-
+	public  gitdemo (){
+		setLayout(new  FlowLayout());
+		for  (int i=0;  i<=20;   i++){
+		add  (new  JButton(String.valueOf(i)));
+		}
+	}
 	/**
 	 * @param args
 	 */
